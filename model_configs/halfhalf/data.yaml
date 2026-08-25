@@ -1,0 +1,16 @@
+path: C:/Users/Hassa/Coding/Projects/3dfooty/annotation_model_train/halfhalf
+
+train: train.txt
+val: val.txt
+
+kpt_shape: [32, 3]
+flip_idx: [24, 25, 26, 27, 28, 29, 22, 23, 21, 17, 18, 19, 20, 13, 14, 15, 16, 9, 10, 11, 12, 8, 6, 7, 0, 1, 2, 3, 4, 5, 31, 30]
+
+names: ['pitch']
+
+# roboflow:
+#   workspace: hfturay
+#   project: soccer-field-keypoints-detection-pcz4n
+#   version: 2
+#   license: CC BY 4.0
+#   url: https://universe.roboflow.com/hfturay/soccer-field-keypoints-detection-pcz4n/dataset/2annotation_model_train/overfit2/data.yaml

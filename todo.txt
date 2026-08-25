@@ -1,0 +1,22 @@
+1. Train model to detect key points
+    - Collect data
+    - Decide which model to use
+        - Understand input format
+    - Clean and standardize data towards input format of model
+        - Generate bounding box information for archive dataset
+        - Write archive dataset to keypoint detection dataset schema in coco format with visibility flags
+    - Split into train and test
+    - Train model
+    - Evaluate model
+2. Use keypoints to perform homography
+3. Use homography to find player positions on grid 
+4. Take grid coor data and use that to generate humanoids in 3d space
+
+Notes:
+- For the sake of consistency, when standardizing labeling, the left and right sdies of the field are decided as if we are looking at the field from the benches of the teams
+- 0 means "deleted", 2 means in the original annotation data the deleted field was not present
+- bounding box information for the archive dataset is missing
+
+Questions:
+- The pose estimation model is asking for the center of the object. This means we need bounding box information on the object first. We need to bake this into to our two datasets
+- One
