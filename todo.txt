@@ -17,6 +17,17 @@ Notes:
 - 0 means "deleted", 2 means in the original annotation data the deleted field was not present
 - bounding box information for the archive dataset is missing
 
-Questions:
-- The pose estimation model is asking for the center of the object. This means we need bounding box information on the object first. We need to bake this into to our two datasets
-- One
+What to do to ingest in new data
+1. Download data and organize it as needed
+2. Visualize data and make sure keypoints are consistent
+3. Remove keypoints that are outside of the pictures frame
+4. Upload revised data to roboflow
+5. Adjust bounding boxes
+    - Could use a mini model for this
+6. Download again
+7. Reorganize again
+8. Split data
+9. Train
+10. Review results
+
+Next Step: Figure out how to do homography
